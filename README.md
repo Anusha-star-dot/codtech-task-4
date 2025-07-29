@@ -1,3 +1,10 @@
+# CODTECH Internship Tasks – Combined
+This repository includes documentation and automation for:
+- Task 3: Kubernetes Deployment
+- Task 4: SonarQube Security Scan Integration
+
+
+
 \# CODTECH Task 3 - Microservices Kubernetes Deployment
 
 
