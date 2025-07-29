@@ -6,30 +6,27 @@ on:
       - main
 
 jobs:
-  SonarCloud:
+  sonarcloud:
     name: SonarCloud Scan
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.10'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r backend/requirements.txt || true
 
-      - name: Run SonarCloud Scan
+      - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
-          args: >
-            -Dsonar.projectKey=Anusha_codtech-task-4
-            -Dsonar.organization=azhw_l9v3znbxy2g1sar
-            -Dsonar.python.version=3.8
+          projectBaseDir: backend
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
