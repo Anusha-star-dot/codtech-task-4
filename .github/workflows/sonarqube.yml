@@ -34,3 +34,4 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_PROJECT_KEY: Anusha_codtech-task-4
           SONAR_ORGANIZATION: anushaice
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
