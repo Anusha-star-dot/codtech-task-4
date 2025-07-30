@@ -31,4 +31,13 @@ jobs:
     - name: Run tests
       run: |
         pytest
-
+      
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@v2
+      with:
+        projectBaseDir: backend
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        SONAR_PROJECT_KEY: Anusha_codtech-task-4
+        SONAR_ORGANIZATION: anushaice
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
