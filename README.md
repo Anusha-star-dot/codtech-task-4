@@ -99,7 +99,8 @@ Once the `SONAR_TOKEN` is configured in GitHub Secrets, the scan will produce a 
 ## 🔗 Task 3 Reference
 This task builds on SonarCloud setup from [Task-3 Repo](https://github.com/Anusha-star-dot/codtech-task-3)
 
-
+# TASK_BACKUP-1
+This repository is a backup of all screenshots and work related to CODTECH intership tasks.
 
 ## 👩‍💻 Author
 
